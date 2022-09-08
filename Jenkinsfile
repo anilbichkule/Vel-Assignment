@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage ('index-on-master') {
             steps {
+                sh "git clone https://github.com/anilbichkule/Vel-Assignment.git -b master"
                 sh "cp -r /mnt/git/Vel-Assignment/index.html /var/www/html/"
                sh "service httpd restart"
             }
