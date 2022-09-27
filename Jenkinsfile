@@ -12,7 +12,7 @@ pipeline {
                 sh "yum install httpd -y"
                 sh "git clone https://github.com/anilbichkule/Vel-Assignment.git -b master"
                 sh "cp -r /mnt/git/Vel-Assignment/index.html /var/www/html/"
-                sh "chmod -R /var/www/html/index.html"
+                sh "chmod -R 777 /var/www/html/index.html"
                sh "service httpd restart"
             }
     }
