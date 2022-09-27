@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label "172.31.38.55"
+      label "172.31.37.6"
     }
   }
   stages {
